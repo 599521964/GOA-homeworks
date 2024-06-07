@@ -1,3 +1,4 @@
+# Registration simulaton
 #input  ნიშნავს შეტანას 
 #output ნიშნავს გამოტანას
 num1 = input("please enter your name: ") #num1 შემაქვს სახელი აქ ვიყენებ input-ს და ინფუთის სავალებით ვანიუშნებ როგორ გამოიყენოს პროგრამა
