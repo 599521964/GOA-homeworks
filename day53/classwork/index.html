@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e8f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            display: flex;
+            width: 900px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .form-section {
+            padding: 40px;
+            flex: 1;
+        }
+
+        .form-section:first-child {
+            background-color: #f4f9ff;
+        }
+
+        .form-section:last-child {
+            background-color: #4d4dff;
+            color: white;
+        }
+
+        .form-section h2 {
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+
+        .form-section:last-child h2 {
+            color: white;
+        }
+
+        .form-section label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .form-section input, 
+        .form-section select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .form-section:last-child input, 
+        .form-section:last-child select {
+            background-color: #ffffff22;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .form-section input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .form-section .terms {
+            font-size: 12px;
+        }
+
+        .form-section:last-child .terms a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .form-section button {
+            padding: 10px 20px;
+            background-color: #fff;
+            border: none;
+            border-radius: 25px;
+            color: #4d4dff;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .form-section button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <!-- General Information Section -->
+        <div class="form-section">
+            <h2>General Information</h2>
+            <label for
+            ="title">Title</label>
+            <select id="title" name="title">
+                <option value="">Select Title</option>
+                <option value="mr">Mr.</option>
+                <option value="ms">Ms.</option>
+                <option value="mrs">Mrs.</option>
+            </select>
+
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name">
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+
+            <label for="position">Position</label>
+            <input type="text" id="position" name="position" placeholder="Position">
+
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Company">
+
+            <label for="business-arena">Business Arena</label>
+            <input type="text" id="business-arena" name="business-arena" placeholder="Business Arena">
+
+            <label for="employees">Employees</label>
+            <select id="employees" name="employees">
+                <option value="">Select Employees</option>
+                <option value="1-10">1-10</option>
+                <option value="11-50">11-50</option>
+                <option value="51-100">51-100</option>
+                <option value="100+">100+</option>
+            </select>
+        </div>
+
+        <!-- Contact Details Section -->
+        <div class="form-section">
+            <h2>Contact Details</h2>
+            <label for="street">Street + Nr.</label>
+           
