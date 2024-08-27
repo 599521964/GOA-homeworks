@@ -1,0 +1,24 @@
+div{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+
+    border: 5px solid red; 
+
+
+    padding: 30px 50px 60px 20px;
+
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    
+    margin: 10px;
+
+}
+/*width არის სიგანე 
+/*height არის სიმაღლე
+/*background-color არის ფონის ფერი
+/*border ელემენტის ზღვარი
+/*padding არის დაშორება ზღარსა და შიგთავს შორის
+/*margin დაშორება სხვადასხვა ელემენტებს შორის 
