@@ -1,0 +1,41 @@
+/*css - ში გამოვიძახე th და td თეგები შევქმენი ჩარჩო ფერი შავი */
+
+th, td {
+    border: 5px  black;
+    padding: 16px;   /*გამოვიყენე თეგი padding-ი რომ გამომეტოვებინა ცხრილის უჯრედებში*/
+    font-family: 'Arial', sans-serif;
+}
+
+th {
+    color: white;
+}
+
+/*გამოვიძახე მშობელი თეგი table და ჩარჩო ავირჩიე კოლაფსი*/
+
+table {
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    text-align: left;
+    border-radius: 5px;
+    overflow: hidden; 
+}
+
+/*გამოვიძახე tr:nth-child(even) ანუ მერამდენე რიგი tr - ის ავირჩიე ყველა ლუწი და გადავეცი ფერი ტომატის*/
+
+tr:nth-child(1) {
+    background-color: rgb(14, 170, 136);
+}
+
+/*გამოვიძახე tr:nth-child(odd) ანუ მერამდენე რიგი tr - ის ავირჩიე ყველა კენტი და გადავეცი ფერი ღია ვარდისფერი*/
+
+tr:nth-child(3) {
+    color: rgb(14, 170, 136);    
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
