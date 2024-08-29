@@ -4,6 +4,7 @@ th, td {
     border: 5px  black;
     padding: 16px;   /*გამოვიყენე თეგი padding-ი რომ გამომეტოვებინა ცხრილის უჯრედებში*/
     font-family: 'Arial', sans-serif;
+    border-bottom: rgb(14, 170, 136);
 }
 
 th {
@@ -28,14 +29,25 @@ tr:nth-child(1) {
 
 /*გამოვიძახე tr:nth-child(odd) ანუ მერამდენე რიგი tr - ის ავირჩიე ყველა კენტი და გადავეცი ფერი ღია ვარდისფერი*/
 
-tr:nth-child(3) {
+/*ტექსტს ფერი შევუცვალე მწვანე გავხადე*/
+tr:nth-child(3) {  
     color: rgb(14, 170, 136);    
 }
 
+ /*ლუწებს ფონის ფერი შევუცვალე გავხადე უფრო ლამაზი*/
 tbody tr:nth-child(even) {
     background-color: #f2f2f2;
   }
 
+  /*გავუკეთე ჩარჩო კიდევ უფრო ლამაზი გავხადე*/
   tbody tr {
     border-bottom: 1px solid #ddd;
   }
+
+  /*გავაფერადე ბორდერის ბოლოში საჭირო ფერით უფრო კიდევ გალამაზდა*/
+/* Add green color and a border to the last row */
+tbody tr:last-child  {
+   
+    border-bottom: 2px solid rgb(14, 170, 136); /* Add a rgb(14, 170, 136); border to the last row */
+  }
+  
