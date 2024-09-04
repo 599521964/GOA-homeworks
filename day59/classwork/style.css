@@ -1,0 +1,38 @@
+/* Initial styling for the box */
+.animated-box {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    margin: 50px auto;
+    animation: boxAnimation 7s ease-in-out 3; /* Run 3 times */
+    animation-delay: 2s; /* Delay of 2 seconds before starting */
+}
+
+/* Keyframe animation */
+@keyframes boxAnimation {
+    0% {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+    }
+    25% {
+        width: 75px;
+        height: 75px;
+        background-color: rgb(0, 225, 255);
+    }
+    50% {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+    }
+    75% {
+        width: 75px;
+        height: 75px;
+        background-color: rgb(255, 153, 0);
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+    }
+}
