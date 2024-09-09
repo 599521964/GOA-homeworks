@@ -1,0 +1,30 @@
+.animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation: change 8s infinite; /* Runs the animation forever */
+      animation-delay: 5s; /* Delays animation start by 5 seconds */
+    }
+
+    @keyframes change {
+      0% {
+        background-color: red;
+        height: 100px;
+      }
+      25% {
+        background-color: blue;
+        height: 150px;
+      }
+      50% {
+        background-color: green;
+        height: 200px;
+      }
+      75% {
+        background-color: yellow;
+        height: 150px;
+      }
+      100% {
+        background-color: red;
+        height: 100px;
+      }
+}
