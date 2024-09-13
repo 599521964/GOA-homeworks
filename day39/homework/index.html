@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample website using various HTML tags.">
+    <title>Sample HTML Tags Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, nav, section, article, aside, footer { margin: 20px; padding: 20px; border: 1px solid #ccc; }
+        nav ul { list-style-type: none; padding: 0; }
+        nav ul li { display: inline; margin-right: 10px; }
+        table { width: 100%; border-collapse: collapse; }
+        table, th, td { border: 1px solid black; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Sample HTML Tags Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <header>
+                <h2>Section 1: Text Content</h2>
+            </header>
+            <article>
+                <p>This is a <strong>paragraph</strong> with various <em>inline</em> elements such as <a href="#">links</a>, <abbr title="HyperText Markup Language">HTML</abbr>, and <mark>highlighted text</mark>.</p>
+                <blockquote cite="https://www.example.com">This is a blockquote from an external source.</blockquote>
+                <pre>This is preformatted text.
+It preserves spaces and line breaks.</pre>
+                <ol>
+                    <li>First ordered item</li>
+                    <li>Second ordered item</li>
+                    <li>Third ordered item</li>
+                </ol>
+                <ul>
+                    <li>First unordered item</li>
+                    <li>Second unordered item</li>
+                    <li>Third unordered item</li>
+                </ul>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>A markup language for creating web pages.</dd>
+                    <dt>CSS</dt>
+                    <dd>A style sheet language for styling web pages.</dd>
+                </dl>
+                <figure>
+                    <img src="image.jpg" alt="Sample Image">
+                    <figcaption>Figure 1: A sample image with a caption.</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="section2">
+            <header>
+                <h2>Section 2: Forms and Interactive Elements</h2>
+            </header>
+            <article>
+                <form action="/submit" method="post">
+                    <fieldset>
+                        <legend>Sample Form</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea><br><br>
+                        <label for="browser">Choose your browser:</label>
+                        <input list="browsers" id="browser" name="browser">
+                        <datalist id="browsers">
+                            <option value="Chrome">
+                            <option value="Firefox">
+                            <option value="Safari">
+                            <option value="Edge">
+                        </datalist><br><br>
+                        <label for="color">Favorite Color:</label>
+                        <input type="color" id="color" name="color"><br><br>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+                <details>
+                    <summary>Click to see more details</summary>
+                    <p>Here are some additional details that you can view.</p>
+                </details>
+                <dialog open>
+                    <p>This is a dialog box.</p>
+                    <button onclick="this.parentElement.close()">Close</button>
+                </dialog>
+            </article>
+        </section>
+
+        <section id="section3">
+            <header>
+                <h2>Section 3: Tables and Multimedia</h2>
+            </header>
+            <article>
+                <table>
+                    <caption>Sample Table</caption>
+                    <thead>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                            <th>Header 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Row 1, Cell 1</td>
+                            <td>Row 1, Cell 2</td>
+                            <td>Row 1, Cell 3</td>
+                        </tr>
+                        <tr>
+                            <td>Row 2, Cell 1</td>
+                            <td>Row 2, Cell 2</td>
+                            <td>Row 2, Cell 3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Footer 1</td>
+                            <td>Footer 2</td>
+                            <td>Footer 3</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <video controls width="250">
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+
+                <embed src="document.pdf" type="application/pdf" width="600" height="400">
+            </article>
+        </section>
+    </main>
+
+    <aside>
+        <p>This is an aside section, which contains additional information.</p>
+    </aside>
+
+    <footer>
+        <p>Footer content goes here. &copy; 2024 Sample Website.</p>
+    </footer>
+
+    <script>
+        console.log("This is a sample script.");
+    </script>
+    /* Basic styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+    
+    header, nav, section, article, aside, footer {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    /* Header styles */
+    header {
+        background-color: #4CAF50;
+        color: white;
+    }
+    
+    header h1 {
+        margin: 0;
+    }
+    
+    /* Navigation styles */
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        background-color: #333;
+        border-radius: 5px;
+    }
+    
+    nav ul li a:hover {
+        background-color: #555;
+    }
+    
+    /* Section and article styles */
+    section {
+        margin-bottom: 20px;
+    }
+    
+    article {
+        margin-bottom: 20px;
+    }
+    
+    /* Text content styles */
+    p {
+        line-height: 1.6;
+    }
+    
+    blockquote {
+        margin: 20px 0;
+        padding: 10px 20px;
+        background-color: #f9f9f9;
+        border-left: 5px solid #ccc;
+    }
+    
+    pre {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border: 1px solid #ddd;
+        overflow-x: auto;
+    }
+    
+    ol, ul {
+        margin: 10px 0;
+        padding: 0 0 0 40px;
+    }
+    
+    dl {
+        margin: 20px 0;
+    }
+    
+    figure {
+        margin: 20px 0;
+    }
+    
+    figcaption {
+        text-align: center;
+        font-style: italic;
+    }
+    
+    /* Form styles */
+    form {
+        margin: 20px 0;
+    }
+    
+    fieldset {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    
+    legend {
+        font-weight: bold;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    input[type="color"],
+    input[type="submit"] {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    /* Details and dialog styles */
+    details {
+        margin: 20px 0;
+    }
+    
+    dialog {
+        border: none;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    /* Table styles */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    
+    table, th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+    
+    thead {
+        background-color: #f9f9f9;
+    }
+    
+    caption {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    /* Multimedia styles */
+    audio, video {
+        display: block;
+        margin: 20px 0;
+    }
+    
+    embed {
+        display: block;
+        margin: 20px 0;
+    }
+    
+    /* Aside styles */
+    aside {
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    /* Footer styles */
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+    }
+    
+    footer p {
+        margin: 0;
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        nav ul li {
+            display: block;
+            margin: 5px 0;
+        }
+    
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+        }
+    }
+</body>
+</html>

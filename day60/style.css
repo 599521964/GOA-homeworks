@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:  white; 
+    
+}
+
+#Korea {
+    background-image: url("https://th.bing.com/th/id/OIP.2SIr3JYG-Oe0VdELaauxpgHaGX?pid=ImgDet&w=192&h=164&c=7");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+}
+
+#a {
+    position: relative;
+    top: 40px;
+}
+
+#Tbilisi {
+    background-image: url("https://lp-cms-production.imgix.net/image_browser/tbilisi-night-GettyRF.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=50&dpr=2");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+}
+
+#b{
+    position: relative;
+    top: 40px;
+}
+
+#NewYork {
+    background-image: url("https://th.bing.com/th/id/OIP.vY8GNAHgxgPXQsjNLurNXwHaE8?rs=1&pid=ImgDetMain");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+}
+
+#c {
+    position: relative;
+    top: 40px;
+}
+
+#Paris {
+    background-image: url("http://ts3.mm.bing.net/th?id=OIP.N0EIJ88JQ30s4-DmA-quAAHaFu&pid=15.1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+}
+
+#d {
+    position: relative;
+    top: 40px; 
+}
+
+#Tokyo {
+    background-image: url("https://media.cntraveler.com/photos/63482b255e7943ad4006df0b/16:9/w_2560%2Cc_limit/tokyoGettyImages-1031467664.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+}
+
+#e {
+    position: relative;
+    top: 40px; 
+}
+
+#Dubai {
+    background-image: url("https://images.pexels.com/photos/15693277/pexels-photo-15693277/free-photo-of-dubai-downtown-at-night.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+}
+
+#f {
+    position: relative;
+    top: 40px; 
+}
+
+.parent {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr; /*ბადე-თარგი-სვეტები*/
+
+    gap: 10px;
+
+    width: 900px;
+    height: 500px;
+    border-radius: 50px;
+}
+
+.child {
+    background-color: green;
+    border-radius: 50px;
+    
+}
+
+
+
+/*grid-template-columns: 1fr 1fr 1fr; - ბადე-თარგი-სვეტები*/
+/*grid-template-rows: 1fr 1fr 1fr; - ბადე-თარგი-რიგები*/
+/*column-gap: 50px; - სვეტებს შორის დაშორება*/
+/*row-gap: 20px; - რიგებს შორის დაშორება*/
+/*gap - ნიშნავს უფსკრული - */
